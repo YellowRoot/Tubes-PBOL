@@ -15,6 +15,22 @@ public class Library implements Serializable {
         collection.add(book);
     }
 
+    public String findBook(int isbn) {
+        String stringReturn = null;
+        for (Book book : collection) {
+            String b = book.toString();
+            String pattern = "ISBN\t: " + isbn;
+            int intIndex = b.indexOf(pattern);
+
+            if(intIndex == -1) {
+                stringReturn = "ISBN not found";
+            } else {
+                stringReturn =  b;
+            }
+        }
+        return stringReturn;
+    }
+
     @Override
     public String toString(){
         StringBuilder books = new StringBuilder("\n");

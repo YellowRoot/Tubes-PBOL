@@ -20,18 +20,28 @@ public class Main {
                     ===============================
                     Select an action
                     Add a book to library\t\t[1]
-                    Show a list of all books\t[2]
-                    Exit\t\t\t\t\t\t[3]
+                    Find a book\t\t\t\t\t[2]
+                    Show a list of all books\t[3]
+                    Exit\t\t\t\t\t\t[4]
                     ===============================""");
             int choice = in.nextInt();
 
             switch (choice) {
                 case 1 -> addBook();
-                case 2 -> System.out.println(lib.toString());
-                case 3 -> quit();
+                case 2 -> findBook();
+                case 3 -> System.out.println(lib.toString());
+                case 4 -> quit();
             }
         }
         in.close();
+    }
+
+    private static void findBook() {
+        System.out.println("\nEnter ISBN :");
+        int isbn = in.nextInt();
+
+        String book = lib.findBook(isbn);
+        System.out.println(book);
     }
 
     private static void addBook() {

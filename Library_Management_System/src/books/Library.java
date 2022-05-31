@@ -19,13 +19,27 @@ public class Library implements Serializable {
         String stringReturn = null;
         for (Book book : collection) {
             String b = book.toString();
-            String pattern = "ISBN\t: " + isbn;
-            int intIndex = b.indexOf(pattern);
 
-            if(intIndex == -1) {
-                stringReturn = "ISBN not found";
-            } else {
+            if (book.getIsbn() == isbn) {
                 stringReturn =  b;
+                break;
+            } else {
+                stringReturn = "\nISBN not found";
+            }
+        }
+        return stringReturn;
+    }
+
+    public String deleteBook(int isbn) {
+        String stringReturn = null;
+
+        for (Book book : collection) {
+            if (book.getIsbn() == isbn) {
+                collection.remove(book);
+                stringReturn = "\nThe book with the ISBN : " + isbn + " has been removed";
+                break;
+            } else {
+                stringReturn = "\nISBN not found";
             }
         }
         return stringReturn;

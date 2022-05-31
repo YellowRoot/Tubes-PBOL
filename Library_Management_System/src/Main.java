@@ -22,7 +22,8 @@ public class Main {
                     Add a book to library\t\t[1]
                     Find a book\t\t\t\t\t[2]
                     Show a list of all books\t[3]
-                    Exit\t\t\t\t\t\t[4]
+                    Remove a book\t\t\t\t[4]
+                    Save and Exit\t\t\t\t[5]
                     ===============================""");
             int choice = in.nextInt();
 
@@ -30,10 +31,19 @@ public class Main {
                 case 1 -> addBook();
                 case 2 -> findBook();
                 case 3 -> System.out.println(lib.toString());
-                case 4 -> quit();
+                case 4 -> deleteBook();
+                case 5 -> quit();
             }
         }
         in.close();
+    }
+
+    private static void deleteBook() {
+        System.out.println("\nEnter ISBN :");
+        int isbn = in.nextInt();
+
+        String res = lib.deleteBook(isbn);
+        System.out.println(res);
     }
 
     private static void findBook() {

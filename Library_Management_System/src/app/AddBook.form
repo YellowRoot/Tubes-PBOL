@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="app.AddBook">
+  <grid id="27dc6" binding="addBookPanel" layout-manager="GridLayoutManager" row-count="13" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-12697790"/>
+      <foreground color="-3619908"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="a93ad" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="1" row-span="2" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-2237738"/>
+          <text value="ISBN :"/>
+        </properties>
+      </component>
+      <component id="9328c" class="javax.swing.JTextField" binding="tfIsbn">
+        <constraints>
+          <grid row="1" column="2" row-span="2" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-12697790"/>
+          <caretColor color="-2237738"/>
+          <foreground color="-2237738"/>
+          <selectedTextColor color="-2237738"/>
+        </properties>
+      </component>
+      <component id="7dfb6" class="javax.swing.JTextField" binding="tfTitle">
+        <constraints>
+          <grid row="3" column="2" row-span="2" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-12697790"/>
+          <caretColor color="-2237738"/>
+          <foreground color="-2237738"/>
+          <selectedTextColor color="-2237738"/>
+        </properties>
+      </component>
+      <component id="a2369" class="javax.swing.JTextField" binding="tfAuthor">
+        <constraints>
+          <grid row="5" column="2" row-span="2" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-12697790"/>
+          <caretColor color="-2237738"/>
+          <foreground color="-2237738"/>
+          <selectedTextColor color="-2237738"/>
+        </properties>
+      </component>
+      <component id="1d13f" class="javax.swing.JTextField" binding="tfGenre">
+        <constraints>
+          <grid row="7" column="2" row-span="2" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-12697790"/>
+          <caretColor color="-2237738"/>
+          <foreground color="-2237738"/>
+          <selectedTextColor color="-2237738"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="c4ac7" class="javax.swing.JTextField" binding="tfPrice">
+        <constraints>
+          <grid row="9" column="2" row-span="2" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-12697790"/>
+          <caretColor color="-2237738"/>
+          <foreground color="-2237738"/>
+          <selectedTextColor color="-2237738"/>
+        </properties>
+      </component>
+      <component id="58726" class="javax.swing.JButton" binding="saveButton" default-binding="true">
+        <constraints>
+          <grid row="11" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <icon value="app/Icon/save-icon--1.png"/>
+          <text value="Save"/>
+        </properties>
+      </component>
+      <component id="a8b12" class="javax.swing.JButton" binding="closeButton" default-binding="true">
+        <constraints>
+          <grid row="11" column="3" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <icon value="app/Icon/red-x-mark-transparent-background-3.png"/>
+          <text value="Close"/>
+        </properties>
+      </component>
+      <vspacer id="ade2a">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <hspacer id="2bb60">
+        <constraints>
+          <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <vspacer id="5abab">
+        <constraints>
+          <grid row="12" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <hspacer id="43d94">
+        <constraints>
+          <grid row="1" column="0" row-span="2" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <component id="276e7" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="1" row-span="2" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-2237738"/>
+          <text value="Title :"/>
+        </properties>
+      </component>
+      <component id="6e4a6" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="5" column="1" row-span="2" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-2237738"/>
+          <text value="Author :"/>
+        </properties>
+      </component>
+      <component id="31668" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="7" column="1" row-span="2" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-2237738"/>
+          <text value="Genre :"/>
+        </properties>
+      </component>
+      <component id="2c550" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="9" column="1" row-span="2" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-2237738"/>
+          <text value="Price :"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

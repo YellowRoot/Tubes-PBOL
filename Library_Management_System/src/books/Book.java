@@ -19,6 +19,22 @@ public class Book implements Serializable {
         return isbn;
     }
 
+    public String getTitle() {
+        return title;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public String getGenre() {
+        return genre;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
     @Override
     public String toString(){
         return "\nISBN\t: " + isbn + "\nTitle\t: " + title +

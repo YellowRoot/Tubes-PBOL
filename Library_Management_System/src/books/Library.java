@@ -15,19 +15,18 @@ public class Library implements Serializable {
         collection.add(book);
     }
 
-    public String findBook(int isbn) {
-        String stringReturn = null;
+    public int findBook(int isbn) {
+        int intReturn = -1;
+
         for (Book book : collection) {
             String b = book.toString();
 
             if (book.getIsbn() == isbn) {
-                stringReturn =  b;
+                intReturn =  collection.indexOf(book);
                 break;
-            } else {
-                stringReturn = "\nISBN not found";
             }
         }
-        return stringReturn;
+        return intReturn;
     }
 
     public String deleteBook(int isbn) {
@@ -39,10 +38,18 @@ public class Library implements Serializable {
                 stringReturn = "\nThe book with the ISBN : " + isbn + " has been removed";
                 break;
             } else {
-                stringReturn = "\nISBN not found";
+                stringReturn = "ISBN not found";
             }
         }
         return stringReturn;
+    }
+
+    public int size() {
+        return collection.size();
+    }
+
+    public Book get(int index) {
+        return collection.get(index);
     }
 
     @Override
